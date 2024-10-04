@@ -65,14 +65,14 @@ function Technology(){
                         <div className={`rounded-full w-10 h-10 border border-white cursor-pointer flex items-center justify-center ${terminology === "spacesport" ? 'bg-white text-black' : 'bg-transparent text-white'}`} onClick={() => setTerminology("spacesport")}>2</div>
                         <div className={`rounded-full w-10 h-10 border border-white cursor-pointer flex items-center justify-center ${terminology === "capsule" ? 'bg-white text-black' : 'bg-transparent text-white'}`} onClick={() => setTerminology("capsule")}>3</div>
                     </div>
-                    <div className="flex flex-col gap-8 p-6 items-center justify-center">
-                    <p className=" uppercase text-[35px] leading-[1.2] text-center"> 
-                    <span className=" text-[#494a53] text-[35px] leading-[1.2] tracking-wide">THE TERMINOLOGY...</span> <br/>
+                    <div className="flex flex-col gap-8 items-center justify-center w-full">
+                    <p className=" uppercase text-[20px] sm:text-[35px] leading-[1.6] text-center"> 
+                    <span className=" text-[#494a53] text-[20px] sm:text-[35px] leading-[1.6] tracking-wide">THE TERMINOLOGY...</span> <br/>
                          {terminology === "launch" && "Launch vehicle"}
                          {terminology === "spacesport" && "Spaceport"}
                          {terminology === "capsule" && "Space capsule"}
                         </p>
-                        <p className="text-slate-300 w-[300px] text-center leading-[1.8] text-[18px]">
+                        <p className="text-slate-300 w-[300px] sm:w-[600px] text-center leading-[1.8] text-[14px] sm:text-[18px]">
                             {terminology === "launch" && "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"}
                             {terminology === "spacesport" && "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch."}
                             {terminology === "capsule" && "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."}

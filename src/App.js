@@ -9,7 +9,7 @@ function App() {
   const [openMenu, setOpenMenu] =  useState(false);
   return (
     <>
-    <div className="flex items-center justify-between bg-inherit px-6  absolute top-5 z-10 w-full overflow-x-hidden ">
+    <div className="flex items-center justify-between bg-inherit sm:px-6 px-0  absolute top-6 z-10 w-full overflow-x-hidden ">
       <div className="ml-10 sm:ml-4">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
       </div>
@@ -25,7 +25,7 @@ function App() {
       </div>
 
       {!openMenu ? 
-            <div className="sm:hidden inline absolute right-20 top-5  cursor-pointer " onClick={()=> setOpenMenu(true)}>
+            <div className="sm:hidden inline absolute right-5 top-3  cursor-pointer " onClick={()=> setOpenMenu(true)}>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
             </div>
             :
